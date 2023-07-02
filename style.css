@@ -1,5 +1,5 @@
 body{
-    width: 1300px;
+    /* width: 1300px; */
     margin: 0 auto;
     text-align: center;
     background-color: rgb(215, 240, 255);
@@ -17,4 +17,18 @@ button:hover{
     color: #212121;
     cursor: pointer;
     transition: .1s;
+}
+
+a{
+    text-decoration: none;
+   color: gold;
+    font-size: 22px;
+}
+
+header, footer{
+    padding: 10px 0;
+    background-color: #1d70b4;
+    color: #fff;
+    font-size: 20px;
+    
 }
