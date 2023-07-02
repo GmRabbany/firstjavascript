@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day one with JS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function firstFunction(){
+            document.getElementById('changeParagraph').innerHTML='paragraph changed by using function Js in internal Js in HTML head, to know more check the code of  head tag'
+        }
+    </script>
+</head>
+<body>
+<!-- practice 1 -->
+    <h2>Practice 1</h2>
+
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <h3 id="htmlchange">JavaScript can change HTML content</h3>
+
+    <button type="button" onclick="document.getElementById('htmlchange').innerHTML = 'I am changed by Js with single quote'">change the HTML by click</button>
+
+    <button type="button" onclick='document.getElementById("htmlchange").innerHTML = "I am changed by Js with double quotes"'>change the HTML by click</button>
+
+    <p> JavaScript accepts both double and single quotes.
+    </p> <hr>
+
+<!-- practice 2 -->
+
+    <h2>Practice 2</h2>
+
+    <h3>JavaScript can change HTML attribute values.</h3>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<!-- width changed -->
+    <button onclick="document.getElementById('imgchanged').width='400'">Control img size 400</button> 
+    <button onclick="document.getElementById('imgchanged').width='200'">Control img size 200</button> 
+    <button onclick="document.getElementById('imgchanged').width='100'">Control img size 100</button> <br>
+
+    <button onclick="document.getElementById('imgchanged').src='https://media0.giphy.com/media/Hl9GiktFKqkliHrNTx/200w.webp?cid=ecf05e47v394jcpcr3e4spnww3syirasyv2r3409oxwpjjt4&ep=v1_gifs_search&rid=200w.webp&ct=g'">Turn On the light</button>
+
+
+    <button onclick="document.getElementById('imgchanged').src='https://www.vhv.rs/dpng/d/459-4593815_pic-bulboff-on-off-gif-hd-png-download.png'">Turn Off the light</button>
+
+   <br>
+
+    <img id="imgchanged" src="https://www.vhv.rs/dpng/d/459-4593815_pic-bulboff-on-off-gif-hd-png-download.png" width="200px" alt=""> <hr>
+
+<!-- practice 3 -->
+    <h2>Practice 3</h2>
+
+    <h3 id="stylechanged">JavaScript can change the style of an HTML element.</h3>
+
+    <button type="button" onclick="document.getElementById('stylechanged').style.fontSize='50px'">change the style of fontSize 50px</button>
+
+    <button type="button" onclick="document.getElementById('stylechanged').style.fontSize='25px'">change the style of fontSize 25px</button> <hr>
+
+<!-- practice 4 -->
+
+
+    <h2>Practice 4</h2>
+
+    <h3 id="hideorshowHTML">JavaScript can Hide or Show the HTML elements.</h3>
+
+    <button type="button" onclick="document.getElementById('hideorshowHTML').style.display='none'">Hide HTML elements</button>
+
+    <button type="button" onclick="document.getElementById('hideorshowHTML').style.display='block'">Show HTML elements</button> <hr>
+
+
+
+<!-- practice 5 -->
+
+    <h2>Practice 5</h2>
+    
+    <h3>JavaScript in Body</h3>
+
+    <p id="scriptaginbody"></p>
+
+    <script>
+        document.getElementById('scriptaginbody').innerHTML='this is innerHTML jabascript to show the content of HTML, by using internel javascript in body. to know more visit the code';
+    </script> <hr>
+
+
+<!-- practice 6 -->
+    <h2>Practice 6</h2>
+
+    <h3>JavaScript in body again with function</h3>
+
+    <p id="changeParagraph2">A Paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quia.</p>
+
+
+    <button type="button" onclick="secondFunction()">change the paragraph by using function js in HTML body <body>
+        
+    </body></button>
+
+    <script>
+        function secondFunction(){
+            document.getElementById('changeParagraph2').innerHTML='paragraph changed by using function Js in internal Js in HTML body, to know more check the code of  body tag'
+        }
+    </script> <hr>
+
+<!-- practice 7 -->
+
+
+    <h2>Practice 7</h2>
+
+    <h3>Demo JavaScript in Head</h3>
+
+    <p id="changeParagraph">A Paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quia.</p>
+
+
+    <button type="button" onclick="firstFunction()">change the paragraph by using function js in HTML head</button> <hr>
+
+
+<!-- practice 8 -->
+
+    <h2>Practice 8</h2>
+    <h3>External JavaScript</h3>
+
+    <p id="changeParagraph3">A Paragraph.</p>
+
+    <button type="button" onclick="thirdFunction()">change the paragraph</button>
+
+    <button type="button" onclick="fourthFunction()">show the paragraph again</button>
+
+    <p>This example links to "script.js".</p>
+    <p>(thirdFunction is stored in "script.js")</p>
+
+    <script src="script.js"></script> <hr>
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+</html>
